@@ -118,19 +118,19 @@
 	    </dependency>
 	    
 	    
-	    <!-- Oracle -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>com.oracle</groupId> -->
-<!-- 		 	<artifactId>ojdbc6</artifactId> -->
-<!-- 		 	<version>11.1.0</version> -->
-<!-- 		</dependency> -->
+		<!-- Oracle -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+		 	<artifactId>ojdbc6</artifactId>
+		 	<version>11.1.0</version>
+		</dependency>
 		
 		<!-- MySQL -->
-	    <dependency>
-	        <groupId>mysql</groupId>
-	        <artifactId>mysql-connector-java</artifactId>
-	        <version>${mysql.connector.version}</version>
-	    </dependency>
+<!-- 	    <dependency> -->
+<!-- 	        <groupId>mysql</groupId> -->
+<!-- 	        <artifactId>mysql-connector-java</artifactId> -->
+<!-- 	        <version>${mysql.connector.version}</version> -->
+<!-- 	    </dependency> -->
 		
 		<!--  lombok -->
 		<dependency>

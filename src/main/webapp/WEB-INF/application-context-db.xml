@@ -16,18 +16,18 @@
  	 
      <!-- Simple implementation of the standard JDBC DataSource interface,  configuring the plain old JDBC DriverManager via bean properties -->
    <bean id="dataSourceDevelopment" class="org.apache.commons.dbcp.BasicDataSource">
-      <property name="driverClassName" value="${mysql.classname}" />
-      <property name="url" value="${mysql1.url}" />
-      <property name="username" value="${mysql1.user}" />
-      <property name="password" value="${mysql1.password}" />
+      <property name="driverClassName" value="${oracle.className}" />
+      <property name="url" value="${dev.url}" />
+      <property name="username" value="${dev.user}" />
+      <property name="password" value="${dev.password}" />
    </bean>
    
    <!-- Simple implementation of the standard JDBC DataSource interface, configuring the plain old JDBC DriverManager via bean properties -->
    <bean id="dataSourceProduction" class="org.apache.commons.dbcp.BasicDataSource">
-      <property name="driverClassName" value="${mysql.classname}" />
-      <property name="url" value="${mysql2.url}" />
-      <property name="username" value="${mysql2.user}" />
-      <property name="password" value="${mysql2.password}" />
+      <property name="driverClassName" value="${oracle.className}" />
+      <property name="url" value="${prd.url}" />
+      <property name="username" value="${prd.user}" />
+      <property name="password" value="${prd.password}" />
    </bean>
     
     
