@@ -1,6 +1,6 @@
 package br.supplychain.dao;
 
-import java.math.BigInteger;
+import java.math.BigDecimal;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -24,8 +24,8 @@ public class UserDAO {
 		return manager.createNativeQuery("select * from cks_spm_user",UserBean.class).getResultList();
 	}
 	
-	public BigInteger getQTDGRP(){
-		return (BigInteger) managerPrd.createNativeQuery("select count(*) from cks_grp_rpons").getSingleResult();
+	public BigDecimal getQTDGRP(){
+		return (BigDecimal) managerPrd.createNativeQuery("select count(*) from cks_grp_rpons").getSingleResult();
 	}
 	
 }
